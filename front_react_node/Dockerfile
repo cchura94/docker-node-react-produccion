@@ -22,10 +22,10 @@ FROM nginx:alpine
 COPY --from=build /usr/src/app/dist /usr/share/nginx/html
 
 # Copiar la configuracion de Nginx
-COPY nginx.conf /etc/nginx/nginx.conf
+# COPY nginx.conf /etc/nginx/nginx.conf
 
 # Exponer el puerto donde levntará el servidor
 EXPOSE 80
 
 # Comando para correr la aplicación
-CMD [ "nginx", "-g", "daemon off;" ]
+# CMD [ "nginx", "-g", "daemon off;" ]
