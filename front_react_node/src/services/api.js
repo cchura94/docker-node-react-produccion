@@ -1,7 +1,7 @@
 import axios from "axios";
 import authService from "./auth.service";
 
-const url_base = "http://127.0.0.1:3000/api";
+const url_base = "http://34.227.15.46:3000/api";
 
 const api = axios.create({
   baseURL: url_base,
